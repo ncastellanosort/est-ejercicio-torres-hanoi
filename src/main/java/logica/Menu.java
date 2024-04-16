@@ -16,9 +16,6 @@ public class Menu {
 
     public boolean cond = true;
     public int elecGeneral;
-//    public int eleccionTorre1;
-//    public int eleccionTorre2;
-//    public int eleccionTorre3;
 
     public void Menu() {
         do {
@@ -42,88 +39,40 @@ public class Menu {
                     break;
 
                 case 2:
+                    
+                    if(Procesos.seleccionGeneral()) break;
 
-                    System.out.println("\nSeleccione la torre donde esta el disco que quiere mover (1,2,3): ");
-                    elecGeneral = in.nextInt();
-
-                    if (Torre_1.primeraTorre.isEmpty() && elecGeneral == 1
-                            || Torre_2.segundaTorre.isEmpty() && elecGeneral == 2
-                            || Torre_3.terceraTorre.isEmpty() && elecGeneral == 3) {
-                        System.out.println("\nNo hay ningun elemento en esta torre para mover.\n");
-                        
-                        
-                        Procesos.imprimirTorres();
-
-                        break;
-                    }
+//                    System.out.println("\nSeleccione la torre donde esta el disco que quiere mover (1,2,3): ");
+//                    elecGeneral = in.nextInt();
+//
+//                    if (Torre_1.primeraTorre.isEmpty() && elecGeneral == 1
+//                            || Torre_2.segundaTorre.isEmpty() && elecGeneral == 2
+//                            || Torre_3.terceraTorre.isEmpty() && elecGeneral == 3) {
+//                        System.out.println("\nNo hay ningun elemento en esta torre para mover.\n");
+//
+//                        Procesos.imprimirTorres();
+//
+//                        break;
+//                    }
 
                     switch (elecGeneral) {
 
                         // TORRE 1
                         case 1:
                             Torre_1.seleccionTorre1();
-                         
-//                            System.out.println("\nSeleccione la torre a donde quiere mover (2/3): ");
-//                            eleccionTorre1 = in.nextInt();
-//                            switch (eleccionTorre1) {
-//                                case 2: {
-//                                    int elem = Torre_1.primeraTorre.pop();
-//                                    Torre_2.segundaTorre.push(elem);
-//                                    break;
-//                                }
-//                                case 3: {
-//                                    int elem = Torre_1.primeraTorre.pop();
-//                                    Torre_3.terceraTorre.push(elem);
-//                                    break;
-//                                }
-//                                default:
-//                                    System.out.println("No es una torre valida");
-//                                    break;
-//                            }
+
                             break;
 
                         // TORRE 2
                         case 2:
                             Torre_2.seleccionTorre2();
-//                            System.out.println("\nSeleccione la torre a donde quiere mover (1/3): ");
-//                            eleccionTorre2 = in.nextInt();
-//                            switch (eleccionTorre2) {
-//                                case 1: {
-//                                    int elem = Torre_2.segundaTorre.pop();
-//                                    Torre_1.primeraTorre.push(elem);
-//                                    break;
-//                                }
-//                                case 3: {
-//                                    int elem = Torre_2.segundaTorre.pop();
-//                                    Torre_3.terceraTorre.push(elem);
-//                                    break;
-//                                }
-//                                default:
-//                                    System.out.println("No es una torre valida");
-//                                    break;
-//                            }
+
                             break;
 
-//                        // TORRE 3
+                        // TORRE 3
                         case 3:
                             Torre_3.seleccionTorre3();
-//                            System.out.println("\nSeleccione la torre a donde quiere mover (1/2): ");
-//                            eleccionTorre3 = in.nextInt();
-//                            switch (eleccionTorre3) {
-//                                case 1: {
-//                                    int elem = Torre_3.terceraTorre.pop();
-//                                    Torre_1.primeraTorre.push(elem);
-//                                    break;
-//                                }
-//                                case 2: {
-//                                    int elem = Torre_3.terceraTorre.pop();
-//                                    Torre_2.segundaTorre.push(elem);
-//                                    break;
-//                                }
-//                                default:
-//                                    System.out.println("No es una torre valida");
-//                                    break;
-//                            }
+
                             break;
 
                         default:
