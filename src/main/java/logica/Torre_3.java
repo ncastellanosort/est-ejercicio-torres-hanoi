@@ -27,7 +27,7 @@ public class Torre_3 {
                 if (terceraTorre.peek() < Torre_1.primeraTorre.peek()) {
                     int elem = terceraTorre.pop();
                     Torre_1.primeraTorre.push(elem);
-                    System.out.println("\nElemento movido exitosamente!");
+                    System.out.println("\nElemento movido exitosamente!\n");
                     break;
 
                 } else {
@@ -41,7 +41,7 @@ public class Torre_3 {
                 if (terceraTorre.peek() < Torre_2.segundaTorre.peek()) {
                     int elem = terceraTorre.pop();
                     Torre_2.segundaTorre.push(elem);
-                    System.out.println("\nElemento movido exitosamente!");
+                    System.out.println("\nElemento movido exitosamente!\n");
 
                     break;
                 } else {

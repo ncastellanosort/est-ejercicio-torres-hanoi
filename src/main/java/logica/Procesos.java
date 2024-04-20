@@ -37,9 +37,40 @@ public class Procesos {
     }
 
     public static void imprimirTorres() {
-        System.out.println(Torre_1.primeraTorre);
-        System.out.println(Torre_2.segundaTorre);
-        System.out.println(Torre_3.terceraTorre);
+//        System.out.println(Torre_1.primeraTorre);
+//        System.out.println(Torre_2.segundaTorre);
+//        System.out.println(Torre_3.terceraTorre);
+
+        int alturaMaxima = torreGanador.size();
+
+        for (int i = alturaMaxima - 1; i >= 0; i--) {
+
+            if (i < Torre_1.primeraTorre.size()) {
+                System.out.print(Torre_1.primeraTorre.get(i) + "\t");
+            } else {
+                System.out.print("|\t");
+            }
+
+            if (i < Torre_2.segundaTorre.size()) {
+                System.out.print(Torre_2.segundaTorre.get(i) + "\t");
+            } else {
+                System.out.print("|\t");
+            }
+
+            if (i < Torre_3.terceraTorre.size()) {
+                System.out.print(Torre_3.terceraTorre.get(i));
+            } else {
+                System.out.print("|");
+            }
+
+            System.out.println();
+        }
+
+        if (Torre_2.segundaTorre.equals(Procesos.torreGanador) || Torre_3.terceraTorre.equals(Procesos.torreGanador)) {
+            System.out.println("\nHas ganado, felicitaciones!\n");
+            Menu.cond = false;
+        }
+
     }
 
     static boolean seleccionGeneral() {

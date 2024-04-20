@@ -29,7 +29,7 @@ public class Torre_1 {
                 if (primeraTorre.peek() < Torre_2.segundaTorre.peek()) {
                     int elem = primeraTorre.pop();
                     Torre_2.segundaTorre.push(elem);
-                    System.out.println("\nElemento movido exitosamente!");
+                    System.out.println("\nElemento movido exitosamente!\n");
                     break;
                 } else {
                     System.out.println("\nEl disco no se puede mover a esa posicion\n");
@@ -42,7 +42,7 @@ public class Torre_1 {
                 if (primeraTorre.peek() < Torre_3.terceraTorre.peek()) {
                     int elem = primeraTorre.pop();
                     Torre_3.terceraTorre.push(elem);
-                    System.out.println("\nElemento movido exitosamente!");
+                    System.out.println("\nElemento movido exitosamente!\n");
                     break;
                 } else {
                     System.out.println("\nEl disco no se puede mover a esa posicion\n");
