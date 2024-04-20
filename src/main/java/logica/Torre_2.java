@@ -16,6 +16,7 @@ public class Torre_2 {
     public static Scanner in = new Scanner(System.in);
     public static Stack<Integer> segundaTorre = new Stack();
     public static int eleccionTorre2;
+    
 
     public static void seleccionTorre2() {
 

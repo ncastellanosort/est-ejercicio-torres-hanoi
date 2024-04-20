@@ -5,6 +5,7 @@
 package logica;
 
 import java.util.Scanner;
+import java.util.Stack;
 
 /**
  *
@@ -17,15 +18,16 @@ public class Procesos {
     public static int elecGeneral;
     public static boolean ps;
     public static int cantDiscos;
+    public static Stack<Integer> torreGanador = new Stack();
 
     public static void iniciarJuego() {
         System.out.println("\nIngrese la cantidad de discos: ");
         cantDiscos = in.nextInt();
-        
+
         System.out.println("\nTorre llenada!\n");
         for (int i = cantDiscos; i > 0; --i) {
             Torre_1.primeraTorre.push(i);
-
+            torreGanador.push(i);
         }
 
         Torre_2.segundaTorre.push(cantDiscos);
