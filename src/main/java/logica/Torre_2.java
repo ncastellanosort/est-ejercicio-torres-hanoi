@@ -23,14 +23,31 @@ public class Torre_2 {
         eleccionTorre2 = in.nextInt();
         switch (eleccionTorre2) {
             case 1: {
-                int elem = segundaTorre.pop();
-                Torre_1.primeraTorre.push(elem);
-                break;
+
+                if (segundaTorre.peek() < Torre_1.primeraTorre.peek()) {
+                    int elem = segundaTorre.pop();
+                    Torre_1.primeraTorre.push(elem);
+                    System.out.println("\nElemento movido exitosamente!");
+                    break;
+                } else {
+                    System.out.println("\nEl disco no se puede mover a esa posicion\n");
+                    break;
+                }
+
             }
             case 3: {
-                int elem = segundaTorre.pop();
-                Torre_3.terceraTorre.push(elem);
-                break;
+
+                if (segundaTorre.peek() < Torre_3.terceraTorre.peek()) {
+
+                    int elem = segundaTorre.pop();
+                    Torre_3.terceraTorre.push(elem);
+                    System.out.println("\nElemento movido exitosamente!");
+                    break;
+                } else {
+                    System.out.println("\nEl disco no se puede mover a esa posicion\n");
+                    break;
+                }
+
             }
             default:
                 System.out.println("No es una torre valida");

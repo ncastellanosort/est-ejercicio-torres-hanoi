@@ -24,6 +24,10 @@ public class Procesos {
 
         }
 
+        Torre_2.segundaTorre.push(5);
+        Torre_3.terceraTorre.push(5);
+
+//        MatrizStacks.mostrarMatrizStacks();
     }
 
     public static void imprimirTorres() {

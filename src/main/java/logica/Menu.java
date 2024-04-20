@@ -39,9 +39,8 @@ public class Menu {
                     break;
 
                 case 2:
-                    
-//                    if(Procesos.seleccionGeneral()) break;
 
+//                    if(Procesos.seleccionGeneral()) break;
                     System.out.println("\nSeleccione la torre donde esta el disco que quiere mover (1,2,3): ");
                     elecGeneral = in.nextInt();
 
@@ -79,8 +78,7 @@ public class Menu {
                             System.out.println("\nIngresa una torre valida");
                     }
 
-                    Procesos.imprimirTorres();
-                    System.out.println("\nElemento movido exitosamente!");
+                    Procesos.imprimirTorres();                    
 
                     break;
 
