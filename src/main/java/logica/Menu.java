@@ -40,20 +40,20 @@ public class Menu {
 
                 case 2:
                     
-                    if(Procesos.seleccionGeneral()) break;
+//                    if(Procesos.seleccionGeneral()) break;
 
-//                    System.out.println("\nSeleccione la torre donde esta el disco que quiere mover (1,2,3): ");
-//                    elecGeneral = in.nextInt();
-//
-//                    if (Torre_1.primeraTorre.isEmpty() && elecGeneral == 1
-//                            || Torre_2.segundaTorre.isEmpty() && elecGeneral == 2
-//                            || Torre_3.terceraTorre.isEmpty() && elecGeneral == 3) {
-//                        System.out.println("\nNo hay ningun elemento en esta torre para mover.\n");
-//
-//                        Procesos.imprimirTorres();
-//
-//                        break;
-//                    }
+                    System.out.println("\nSeleccione la torre donde esta el disco que quiere mover (1,2,3): ");
+                    elecGeneral = in.nextInt();
+
+                    if (Torre_1.primeraTorre.isEmpty() && elecGeneral == 1
+                            || Torre_2.segundaTorre.isEmpty() && elecGeneral == 2
+                            || Torre_3.terceraTorre.isEmpty() && elecGeneral == 3) {
+                        System.out.println("\nNo hay ningun elemento en esta torre para mover.\n");
+
+                        Procesos.imprimirTorres();
+
+                        break;
+                    }
 
                     switch (elecGeneral) {
 

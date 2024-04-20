@@ -17,16 +17,16 @@ public class Procesos {
     public static int elecGeneral;
     public static boolean ps;
 
-    static void iniciarJuego() {
+    public static void iniciarJuego() {
         System.out.println("\nTorre llenada!\n");
-        for (int i = 1; i < 5; i++) {
+        for (int i = 4; i > 0; --i) {
             Torre_1.primeraTorre.push(i);
 
         }
 
     }
 
-    static void imprimirTorres() {
+    public static void imprimirTorres() {
         System.out.println(Torre_1.primeraTorre);
         System.out.println(Torre_2.segundaTorre);
         System.out.println(Torre_3.terceraTorre);
@@ -42,11 +42,11 @@ public class Procesos {
             System.out.println("\nNo hay ningun elemento en esta torre para mover.\n");
 
             Procesos.imprimirTorres();
-            
-            ps = false;
-            
+
+            ps = true;
+
         }
-        
+
         return ps;
 
     }
