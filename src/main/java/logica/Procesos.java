@@ -16,16 +16,20 @@ public class Procesos {
 
     public static int elecGeneral;
     public static boolean ps;
+    public static int cantDiscos;
 
     public static void iniciarJuego() {
+        System.out.println("\nIngrese la cantidad de discos: ");
+        cantDiscos = in.nextInt();
+        
         System.out.println("\nTorre llenada!\n");
-        for (int i = 4; i > 0; --i) {
+        for (int i = cantDiscos; i > 0; --i) {
             Torre_1.primeraTorre.push(i);
 
         }
 
-        Torre_2.segundaTorre.push(5);
-        Torre_3.terceraTorre.push(5);
+        Torre_2.segundaTorre.push(cantDiscos);
+        Torre_3.terceraTorre.push(cantDiscos);
 
 //        MatrizStacks.mostrarMatrizStacks();
     }

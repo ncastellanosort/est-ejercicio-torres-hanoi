@@ -23,7 +23,7 @@ public class Menu {
             System.out.println("\n-----------------------\n");
             System.out.println("1. Iniciar Juego");
             System.out.println("2. Mover disco hacia siguientes torres");
-            System.out.println("5. Salir");
+            System.out.println("3. Salir");
 
             System.out.println("\n-----------------------\n");
 
@@ -78,12 +78,12 @@ public class Menu {
                             System.out.println("\nIngresa una torre valida");
                     }
 
-                    Procesos.imprimirTorres();                    
+                    Procesos.imprimirTorres();
 
                     break;
 
-                case 5:
-                    System.out.println("\nHasta luego");
+                case 3:
+                    System.out.println("\nHasta luego!");
                     cond = false;
                     break;
 
